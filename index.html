@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yousuf's Personal Portfolio!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Education Timeline</title>
+    <style>
+        /* Custom CSS for the timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid #A4D4AE ;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding: 1rem 1rem 1rem 2.5rem;
+            margin-bottom: 1.5rem;
+            background-color: #013830 ;
+            color: #FFFEEE;
+            border-radius: 8px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-item ul {
+            padding-left: 1.5rem; /* Indent list items to align nicely */
+        }
+
+        .timeline-item ul li {
+            list-style-type: disc; 
+            color: #D3D3D3; 
+            margin-left: 1.5rem; 
+        }
+
+        .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: -1rem;
+            top: 1.2rem;
+            width: 10px;
+            height: 10px;
+            background-color: #A4D4AE ;
+            border-radius: 50%;
+        }
+
+        /* Custom image sizing */
+        .custom-image img {
+            width: 192px;
+            height: auto;
+        }
+
+        .has-text-soft-ivory {
+        color: #FAF3DD; /* Soft ivory color code */
+        }
+
+        .tight-box {
+        width: fit-content; /* Make the box width fit the content */
+        background-color:#528a7711;
+        color: ivory;
+        }
+
+        .navbar .button:hover {
+            background-color: #088d7b;
+            color: #dce6e4; /* or another contrasting color */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .navbar .button{
+            border-radius: 5px; /* Round edges similar to the example */
+            padding: 0.5rem 1rem; /* Adjust padding to create a larger button */
+            font-weight: bold; /* Make the text bold */
+            display: inline-flex; /* Center icon and text vertically */
+            align-items: center;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+        }
+
+    </style>
+  </head>
+  <body>
+
+
+  <!-- Navigation Bar -->
+  <nav class="navbar is-text is-fixed-top has-background-primary-85-invert">
+    <span class="has-background-primary-soft"></span>
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  
+    <div class="navbar-menu">
+      
+      <div class="navbar-start">
+        <span class="navbar-item is-size-4">Yousuf Hoda</span>
+      </div>
+    
+      <div class="navbar-end">
+        <a class="navbar-item" href="#About">
+            <span class="icon is-small">
+                <i class="fas fa-user"></i>
+            </span>
+            About
+        </a>
+        <div class="navbar-end">
+            <a class="navbar-item" href="#Education">
+                <span class="icon is-small">
+                    <i class="fas fa-user"></i>
+                </span>
+          Education
+        </a>
+        <div class="navbar-end">
+            <a class="navbar-item" href="#Experience">
+                <span class="icon is-small">
+                    <i class="fas fa-user"></i>
+                </span>
+          Experience
+        </a>
+        <div class="navbar-end">
+            <a class="navbar-item" href="#Resume">
+                <span class="icon is-small">
+                    <i class="fas fa-user"></i>
+                </span>
+          Resume
+        </a>
+        <div class="navbar-end">
+            <a class="navbar-item" href="#Contact">
+                <span class="icon is-small">
+                    <i class="fas fa-user"></i>
+                </span>
+          Contact
+        </a>
+        <div class="navbar-end">
+            <a class="navbar-item" href="https://www.linkedin.com/in/yousuf-hoda-4924741ab" target="_blank">
+                <span class="icon">
+                  <i class="fab fa-linkedin"></i>
+                </span>
+        </a>
+        <div class="navbar-end">
+            <a class="navbar-item" href="https://github.com/yousufhoda" target="_blank">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  
+  
+<!-- Header -->
+<section class="hero is-text is-fullheight is-fullheight-with-navbar has-background-primary-85-invert">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1">
+          Hi, I'm Yousuf!
+        </h1>
+        <h2 class="subtitle is-3">
+          Welcome to my personal portfolio
+        </h2>
+      </div>
+      <div class="container">
+        <!-- Use custom class for specific size -->
+        <figure class="image custom-image is-inline-block">
+          <img src="#" alt="Photo of Yousuf Hoda">
+        </figure>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .custom-image img {
+      width: 192px; /* Set to desired width */
+      height: auto; /* Maintains aspect ratio */
+    }
+  </style>
+  
+  <!-- About -->
+  <section class="section" id="About">
+    <!-- Title -->
+    <div class="container">
+      <h3 class="title is-2 has-text-centered">A little bit about me</h3>
+      <div class="container">
+        <p>I am currently in my 5th and final year at <strong>Toronto Metropolitan University</strong> in the <strong>
+            Business Technology Management Co-op</strong> program. 
+            Throughout my time in the <strong>BTM</strong> program, I have gained valuable skills 
+            and knowledge in both business and information technology. These experiences have 
+            prepared me to bridge the gap between technology and business, using technology-based 
+            solutions to solve business challenges. Also, as part of the co-op program, 
+            I have had the oppurtunity to apply my classroom knowledge into real-world scenarios. 
+            These placements have allowed me to collaborate with industry porfessionals, sharpen my 
+            problem-solving skills, and understand the impact of technology-driven solutions in business enivronments.
+
+      </div>
+    </div>
+    </section>
+
+    <!-- Education-->
+    <section class="section" id="Education">
+        <div class="container">
+            <h3 class="title is-2 has-text-centered">Education</h3>
+            
+            <div class="timeline">
+                <!-- Timeline Item: TMU -->
+                <div class="timeline-item">
+                    <p class="is-size-6 has-text-weight-semibold">2020 - 2025</p>
+                    <h4 class="title is-4 mt-0 mb-1">Toronto Metropolitan University <span class="has-text-success">(formerly Ryerson University)</span></h4>
+                    <ul>
+                        <li><strong>Business Technology Management Co-op</strong> (B.Comm)</li>
+                        <li><strong>Key Courses:</strong> Systems Analysis and Design, Data and Information Management, IT Infrastructure, Information Systems Security and Privacy, Enterprise Architecture, Business Intelligence and Analytics, Cloud Computing</li>
+                        <li><strong>Bootcamps Completed:</strong> Power of Excel, Business Fundamentals</li>
+                    </ul>
+                </div>
+                
+                <!-- Timeline Item: High School -->
+                <div class="timeline-item">
+                    <p class="is-size-6 has-text-weight-semibold">2016 - 2020</p>
+                    <h4 class="title is-4 mt-0 mb-1">Oakville Trafalgar High School</h4>
+                    <ul>
+                        <li>Ontario Secondary School Diploma (OSSD)</li>
+                        <li><strong>Achievements:</strong> Honor Roll</li>
+                        <li><strong>Relevant Courses:</strong> Computer Science, Mathematics, Business Studies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience-->
+    <section class="section" id="Experience">
+        <div class="container">
+            <h3 class="title is-2 has-text-centered">Experience</h3>
+            
+            <div class="timeline">
+                <!-- Timeline Item: Siemens Energy -->
+                <div class="timeline-item">
+                    <p class="is-size-6 has-text-weight-semibold">Jan 2024 - Aug 2024</p>
+                    <h4 class="title is-4 mt-0 mb-1">Financial Analyst (Co-op) <span class="has-text-success">- Siemens Energy</span> </h4>
+                    <ul>
+                        <li>Collaborated with the finance team to manage sales orders, goods receipts, and invoices using SAP</li>
+                        <li><strong>Relevant Skills:</strong> Financial Analysis, SAP, Data Entry</li>
+                    </ul>
+                </div>
+                
+                <!-- Timeline Item: Siemens Gamesa -->
+                <div class="timeline-item">
+                    <p class="is-size-6 has-text-weight-semibold">May 2023 - Aug 2023</p>
+                    <h4 class="title is-4 mt-0 mb-1">Financial Analyst (Co-op) <span class="has-text-success">- Siemens Gamesa Renewable Energy S.A</span> </h4>
+                    <ul>
+                        <li>Developed financial reports and analyses utilizing Excel tools, and ensured accuracy in purchase orders through detailed data management</li>
+                        <li><strong>Relevant Skills:</strong> Financial reporting and analysis, EXCEL(VLOOKUP, Pivot Tables)</li>
+                    </ul>
+                </div>
+                <!-- Timeline Item: CIBC Mellon -->
+                <div class="timeline-item">
+                    <p class="is-size-6 has-text-weight-semibold">May 2022 - Dec 2022</p>
+                    <h4 class="title is-4 mt-0 mb-1">Portfolio Operations Administrator (Co-op) <span class="has-text-success">- CIBC Mellon</span> </h4>
+                    <UL>
+                        <LI >Prepared daily cash projections and ensured accurate reporting of portfolio cash management, while effectively resolving client issues</LI>
+                        <LI><strong>Relevant Skills:</strong> Cash projections, Excel, Financial reporting</LI>
+                    </UL>
+                </div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="section" id="resume">
+        <div class="container">
+            <div class="section-heading has-addons">
+                <h3 class="title is-2 has-text-centered">Resume</h3>
+            </div>
+            <div class="has-text-centered">
+              <a href="Resume 2024.pdf" class="button is-success is-medium mt-4" download target="_blank">
+                <span class="icon">
+                  <i class="fas fa-file-alt"></i>
+                </span>
+                <span>Download My Resume</span>
+              </a>
+            </div>
+        </div>
+      </section>
+
+<!-- Contact Section -->
+<section class="section" id="Contact">
+    <div class="container">
+        <h3 class="title is-2 has-text-centered">Contact Me</h3>
+
+        <!-- Centering the box using flexbox -->
+        <div class="columns is-centered">
+            <div class="column is-narrow">
+                <div class="box tight-box is-flex is-align-items-center 
+                is-justify-content-center" style="padding: 1rem;">
+                    <p class="has-text-centered"> 
+                        Get in touch with me at: 
+                        <a href="mailto:yousuf.hoda@torontomu.ca" class="has-text-link">yousuf.hoda@torontomu.ca</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section" id="Contact">
+    <div class="container">
+        <h3 class="title is-2 has-text-centered">Contact Me</h3>
+
+        <!-- Center the button with a text prompt -->
+        <div class="has-text-centered">
+            <a href="mailto:yousuf.hoda@torontomu.ca" class="button is-success is-medium mt-3">
+                <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span>Email Me</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer has-text-centered p-5 has-background-black-ter has-text-primary">
+    <div class="conent">
+      <p>
+        Yousuf Hoda Personal Portfolio - 2024
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
