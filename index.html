@@ -75,6 +75,14 @@
             align-items: center;
             transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
         }
+        
+        .navbar {
+          background: linear-gradient(to right, #163b33, #42a892);
+          box-shadow: 0 4px 8px rgba(22,59,51,255);
+          position: sticky;
+          top: 0;
+          z-index: 10;
+        }
 
     </style>
   </head>
@@ -92,23 +100,15 @@
       </div>
     </div>
   
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <div class="navbar-menu">
       
       <div class="navbar-start">
-        <a href="/" class="navbar-item is-size-4 has-text-weight-bold" 
-           style="font-family: 'Source Sans Pro', sans-serif; user-select: none;">
-            Yousuf Hoda
+        <a href="https://yousufhoda.github.io/portfolio/" class="navbar-item is-size-4 has-text-weight-bold" 
+          style="font-family: 'Source Sans Pro', sans-serif;">  
+          Yousuf Hoda
         </a>
       </div>
     
-      <div class="navbar-end">
-        <a class="navbar-item" href="#About">
-            <span class="icon is-small">
-                <i class="fas fa-user"></i>
-            </span>
-            About
-        </a>
         <div class="navbar-end">
             <a class="navbar-item" href="#Education">
                 <span class="icon is-small">
@@ -186,26 +186,6 @@
       height: auto; /* Maintains aspect ratio */
     }
   </style>
-  
-  <!-- About -->
-  <section class="section" id="About">
-    <!-- Title -->
-    <div class="container">
-      <h3 class="title is-2 has-text-centered">A little bit about me</h3>
-      <div class="container">
-        <p>I am currently in my 5th and final year at <strong>Toronto Metropolitan University</strong> in the <strong>
-            Business Technology Management Co-op</strong> program. 
-            Throughout my time in the <strong>BTM</strong> program, I have gained valuable skills 
-            and knowledge in both business and information technology. These experiences have 
-            prepared me to bridge the gap between technology and business, using technology-based 
-            solutions to solve business challenges. Also, as part of the co-op program, 
-            I have had the oppurtunity to apply my classroom knowledge into real-world scenarios. 
-            These placements have allowed me to collaborate with industry porfessionals, sharpen my 
-            problem-solving skills, and understand the impact of technology-driven solutions in business enivronments.
-        </p>
-      </div>
-    </div>
-    </section>
 
     <!-- Education-->
     <section class="section" id="Education">
