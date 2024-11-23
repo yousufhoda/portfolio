@@ -104,6 +104,12 @@
       object-fit: cover;
       /* Ensures the image covers the circle without stretching */
     }
+
+    a:focus,
+    button:focus {
+      outline: 2px solid #A4D4AE;
+      outline-offset: 2px;
+    }
   </style>
 </head>
 
@@ -155,7 +161,8 @@
           </span>
           Contact
         </a>
-        <a class="navbar-item" href="https://www.linkedin.com/in/yousuf-hoda-4924741ab" target="_blank">
+        <a class="navbar-item" href="https://www.linkedin.com/in/yousuf-hoda-4924741ab" target="_blank"
+          aria-label="Visit Yousuf Hoda's LinkedIn profile">
           <span class="icon">
             <i class="fab fa-linkedin"></i>
           </span>
@@ -209,11 +216,13 @@
           <h4 class="title is-4 mt-0 mb-1">Toronto Metropolitan University <span class="has-text-success">(formerly
               Ryerson University)</span></h4>
           <ul>
-            <li><strong>Business Technology Management Co-op</strong> (B.Comm)</li>
-            <li><strong>Key Courses:</strong> Systems Analysis and Design, Data and Information Management, IT
-              Infrastructure, Information Systems Security and Privacy, Enterprise Architecture, Business Intelligence
-              and Analytics, Cloud Computing</li>
-            <li><strong>Bootcamps Completed:</strong> Power of Excel, Business Fundamentals</li>
+            <li><span class="has-text-weight-bold">Business Technology Management Co-op</span> (B.Comm)</li>
+            <li><span class="has-text-weight-bold">Key Courses:</span> Systems Analysis and Design, Data and Information
+              Management, IT Infrastructure, Information Systems Security and Privacy, Enterprise Architecture, Business
+              Intelligence and Analytics, Cloud Computing</li>
+            <li><span class="has-text-weight-bold">Bootcamps Completed:</span> Power of Excel, Business Fundamentals
+            </li>
+
           </ul>
         </div>
 
@@ -244,7 +253,7 @@
               Energy</span> </h4>
           <ul>
             <li>Collaborated with the finance team to manage sales orders, goods receipts, and invoices using SAP</li>
-            <li><strong>Relevant Skills:</strong> Financial Analysis, SAP, Data Entry</li>
+            <li><span class="has-text-weight-bold">Relevant Skills:</span> Financial Analysis, SAP, Data Entry</li>
           </ul>
         </div>
 
@@ -302,7 +311,8 @@
                 is-justify-content-center" style="padding: 1rem;">
             <p class="has-text-centered">
               Get in touch with me at:
-              <a href="mailto:yousuf.hoda@torontomu.ca" class="has-text-link">yousuf.hoda@torontomu.ca</a>
+              <span class="has-text-weight-bold"><a href="mailto:yousuf.hoda@torontomu.ca"
+                  class="has-text-link">yousuf.hoda@torontomu.ca</a></span>
             </p>
           </div>
         </div>
