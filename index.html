@@ -8,6 +8,10 @@
   <title>Yousuf Hoda | Personal Portfolio | BTM Student</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Template origiannly from:
+  Ubaid Raza, M. (2024, August 24). Personal – Free Bulma template (Version 4.0) https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/personal.html-->
+  
   <style>
     /* Custom CSS for the timeline */
     .timeline {
@@ -116,58 +120,53 @@
 <body>
 
   <!-- Navigation Bar -->
-  <nav class="navbar is-text is-fixed-top has-background-primary-85-invert">
-    <span class="has-background-primary-soft"></span>
+  <nav class="navbar is-text is-fixed-top has-background-primary-85-invert" role="navigation" aria-label="Main navigation">
     <div class="navbar-brand">
-      <!-- Burger icon for mobile-->
-      <div class="navbar-burger is-success" data-target="navbarExampleTransparentExample">
+      <div class="navbar-burger is-success" data-target="navbarExampleTransparentExample" aria-label="Menu toggle">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
-
+  
     <div class="navbar-menu" id="navbarExampleTransparentExample">
       <div class="navbar-start">
-        <a href="https://yousufhoda.github.io/portfolio/" class="navbar-item is-size-4 has-text-weight-bold"
-          style="font-family: 'Source Sans Pro', sans-serif;">
+        <a href="https://yousufhoda.github.io/portfolio/" class="navbar-item is-size-4 has-text-weight-bold" style="font-family: 'Source Sans Pro', sans-serif;" aria-label="Home Page">
           Yousuf Hoda
         </a>
       </div>
-
-      <!-- Single navbar-end block for all right-aligned items -->
+  
       <div class="navbar-end">
-        <a class="navbar-item" href="#Education">
+        <a class="navbar-item" href="#Education" aria-label="Education Section">
           <span class="icon is-small">
             <i class="fas fa-graduation-cap"></i>
           </span>
           Education
         </a>
-        <a class="navbar-item" href="#Experience">
+        <a class="navbar-item" href="#Experience" aria-label="Experience Section">
           <span class="icon is-small">
             <i class="fas fa-briefcase"></i>
           </span>
           Experience
         </a>
-        <a class="navbar-item" href="#Resume">
+        <a class="navbar-item" href="#Resume" aria-label="Resume Section">
           <span class="icon is-small">
             <i class="fas fa-file-alt"></i>
           </span>
           Resume
         </a>
-        <a class="navbar-item" href="#Contact">
+        <a class="navbar-item" href="#Contact" aria-label="Contact Section">
           <span class="icon is-small">
             <i class="fas fa-envelope"></i>
           </span>
           Contact
         </a>
-        <a class="navbar-item" href="https://www.linkedin.com/in/yousuf-hoda-4924741ab" target="_blank"
-          aria-label="Visit Yousuf Hoda's LinkedIn profile">
+        <a class="navbar-item" href="https://www.linkedin.com/in/yousuf-hoda-4924741ab" target="_blank" aria-label="Visit Yousuf Hoda's LinkedIn profile">
           <span class="icon">
             <i class="fab fa-linkedin"></i>
           </span>
         </a>
-        <a class="navbar-item" href="https://github.com/yousufhoda" target="_blank">
+        <a class="navbar-item" href="https://github.com/yousufhoda" target="_blank" aria-label="Visit Yousuf Hoda's GitHub profile">
           <span class="icon">
             <i class="fab fa-github"></i>
           </span>
@@ -175,7 +174,7 @@
       </div>
     </div>
   </nav>
-
+  
   <!-- Header -->
   <section class="hero is-text is-fullheight is-fullheight-with-navbar has-background-primary-85-invert">
     <div class="hero-body">
